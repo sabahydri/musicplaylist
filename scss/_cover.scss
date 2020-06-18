@@ -1,0 +1,116 @@
+@import 'mixins';
+$colormiddle:#358597;
+
+.img_cover{
+
+    position: relative;
+    background-image: url(../pic/cover.jpg);
+    background-size: cover;
+    height: 40%;
+}
+
+.musicplay{
+    
+    width: 70%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    left: 5rem;
+    top: 14rem;
+    img{
+        width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+           
+    }
+    .musicicon button{
+        
+        
+        align-self: flex-end;
+       
+    }
+    @include bp-mamaBear{
+        left: 0rem;
+        top: 28rem;
+    }
+    @include bp-papaBear{
+        left: 5rem;
+        top: 14rem;
+    }
+}
+.musicicon{
+    display: flex;
+
+}
+.musicdiv{
+    display: flex;
+}
+.circle1{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;  
+    background-image: url(../pic/threedot.svg);
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: flex-end;
+    
+}
+.circle2{
+    @extend .circle1;
+    background-image: url(../pic/paper-plane.svg);
+    margin-left: 1rem;
+   
+}
+.circle1:hover{
+    background-image:url(../pic/threedot3.png);
+    background-color: white;
+}
+.circle2:hover{
+    
+    background-image: url(../pic/paper-plane2.svg);
+    background-color: white;
+}
+
+.music_detail{
+    position: absolute;
+    left: 28rem;
+    bottom: 1rem;
+    p{
+        padding: 0;
+        margin: auto;
+        font-size: 1.5rem;
+        text-align: left;
+        opacity: 0.5;
+        @include bp-babyBear{
+            font-size: 2rem;
+        }
+    }
+    p span{
+        font-size: 1rem;
+    }
+}
+
+.search{
+    border: none;
+    padding: 0.7rem;
+    position: absolute;
+    border-radius: 25rem;
+    left: 28rem;
+    width: 12rem;
+    margin-top: 1rem;
+    @include bp-babyBear{
+        left: 15rem;
+    }
+    @include bp-mamaBear{
+        left: 15rem;
+    }
+}
+
+.arrow{
+    position: absolute;
+    display: flex;
+    left: 1rem;
+    top: 1rem;
+}

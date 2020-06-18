@@ -1,0 +1,19 @@
+{
+  "name": "myfirstproject",
+  "version": "1.0.0",
+  "description": "start project for my new project",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "saba heydari",
+  "license": "MIT"
+}

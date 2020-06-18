@@ -1,0 +1,55 @@
+@import 'mixins';
+
+.list_musics{
+    margin-bottom: 3rem;
+    margin-top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    padding-left: 0rem;
+    @include bp-babyBear{
+        
+    }
+
+ul{
+    list-style: none;
+    @include bp-babyBear{
+        padding-top: 0rem;
+    }
+}
+}
+.list{
+    display: flex;
+ li{
+     color: white;
+     font-size: 1rem;
+     margin-top: 3rem;
+     flex-grow: 3;
+     text-align: left;
+     width: 25%;
+     @include bp-babyBear{
+         font-size: 1.5rem;
+         padding-left: 0rem;
+         margin-left: 0rem;
+     }
+     
+img{
+    height: 1rem;
+    width: 1rem;
+    padding-right: 1rem;
+    
+    
+}
+ }
+
+ 
+}
+.list li:nth-child(1){
+    text-align: right;
+
+}
+
+.list1{
+    flex-grow: 0;
+    flex-basis: 1rem;
+}

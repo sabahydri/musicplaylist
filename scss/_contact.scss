@@ -1,0 +1,45 @@
+.contacts{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    flex-wrap: nowrap;
+
+    li{
+        p{
+            opacity: 0.5;
+            text-align: left;
+            font-size: 1.5rem;
+        }
+    }
+ul{
+    @extend .contacts;
+    flex-direction: row;
+li{
+    p{
+        font-size: 1.5rem;
+        margin-top: 0;
+        padding-top: 0;
+        text-align: left;
+    }
+    div{
+       
+        border-radius: 50%;
+        font-size: 1.5rem;
+        height: 2rem;
+        width: 2rem;
+        text-align: center;
+        background-color: #358597;
+    }
+    
+}
+
+}
+}
+
+.me li:nth-child(2){
+    flex-grow: 3;
+    
+}
+

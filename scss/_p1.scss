@@ -1,0 +1,25 @@
+@import 'mixins';
+$colormiddle:#358597;
+$colorside:#F4A896;
+p{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+button{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem; 
+    border: 0rem;
+    border-radius: 5rem;
+    @include verticalGradient($colormiddle,lighten($colormiddle,40%));
+    width: 80%;
+    margin-left: 1.5rem;
+}
+button:hover{
+
+    @include verticalGradient(white,lighten($colormiddle,40%));
+    color: $colormiddle;
+}
